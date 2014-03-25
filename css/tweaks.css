@@ -3,3 +3,6 @@ a.logo h3 {
     margin-top: 0;
     color: #fff;
 }
+.feature i { font-size: 9em;}
+
+.features{ height: 80vh; }

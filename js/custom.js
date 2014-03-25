@@ -147,7 +147,7 @@ jQuery(document).ready(function($) {
 	});
 
 	/*----------- Navigation -----------*/
-	$('nav.main a').click(function(e) {
+	$('nav.main a, .inline-nav').click(function(e) {
 		e.preventDefault();
 		$target = $(this).attr('href');
 		$padding = $($target).css('padding-top');
