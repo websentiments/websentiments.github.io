@@ -1,6 +1,6 @@
 ---
 layout: default
-templatename: blog
+templatename: post
 ---
 <header id="main-header">
     <nav id="header-nav">
@@ -20,50 +20,35 @@ templatename: blog
         <a id="nav-trigger" href="#">Toggle Navigation</a>
     </nav>
 </header>
-<section id="article-list" class="blog">
+<section id="article" class="blog">
     <div class="container">
-        {% for post in site.posts limit: 10  %}
         <article>
             <div class="heading">
-                <a href="{{ post.url }}" class="">
-                    <h2>{{ post.title }}</h2>
+                <a href="{{ page.url }}" class="">
+                    <h1>{{ page.title }}</h1>
                 </a>
                 <div class="post-details">
-                    {% if post.author %}
-                    <span class="author">{{ post.author }}</span>
+                    {% if page.author %}
+                    <span class="author">{{ page.author }}</span>
                     <span class="bullet">∙</span>
                     {% endif %}
-                    <span class="date">{{ post.date | date_to_long_string }}</span>
+                    <span class="date">{{ page.date | date_to_long_string }}</span>
                 </div>
             </div>
             <div class="hero">
-                <a href="{{ post.url }}">
-                    {% if post.splash %}
-                        {% if post.splash contains '://' %}
-                        <img src="{{post.splash}}" />
+                <a href="{{ page.url }}">
+                    {% if page.splash %}
+                        {% if page.splash contains '://' %}
+                        <img src="{{page.splash}}" />
                         {% else %}
-                        <img src="{{site.base_path}}{{post.splash}}" />
+                        <img src="{{site.base_path}}{{page.splash}}" />
                         {% endif %}
                     {% endif %}
                 </a>
             </div>
-            {%if post.summary %}
             <div class="summary">
-                {{ post.summary | markdownify }}
-            </div>
-            {% else %}
-                {% if post.content contains '<!--more-->' %}
-                  {{ post.content | split:'<!--more-->' | first }}
-                {% else %}
-                  <p>
-                  {{ post.content | strip_html | truncatewords:50 }}
-                  </p>
-                {% endif %}
-            {% endif %}
-            <div class="post-links">
-                <a class="continue-reading zoom" href="{{ post.url }}">Continue reading</a>
+                {{ content }}
             </div>
         </article>
-        {% endfor %}
     </div>
 </section>
