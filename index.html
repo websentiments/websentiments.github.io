@@ -1,300 +1,247 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Web Sentiments - Digital Marketing Platform</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: default
+---
+<header id="main-header">
+    <nav id="header-nav">
+        <!-- Add class "img" to the logo to use image instead of the text -->
+        <h1 class="logo"><a href="index.html">Web Sentiments</a></h1>
+        <div id="header-nav-container">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Usage</a></li>
+                <li><a href="#">Subscribe</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <a id="nav-trigger" href="#">Toggle Navigation</a>
 
-	<!-- Base scripts -->
-	<script type="text/javascript" src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/modernizr-latest.js"></script>
+    </nav>
+</header>
 
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
-	<link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/tweaks.css" />
-	<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+<section id="cover" class="bg-paralax-fx">
+    <div class="container">
+        <h3 class="no-margin">Neat Solution For A</h3>
+        <h2>Growing<br> Business</h2>
+        <p>The state-of-the-art HTML5 powered flexible layout with lightspeed fast CSS3 transition effects. Works perfect in any modern mobile and desktop browsers ...</p>
+    </div>
+</section>
+<section id="features">
+    <div class="container">
+        <h2>Features</h2>
 
-	<!-- Fonts -->
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <div class="column-container">
+            <div class="column one-third">
+                <img class="icon-50 float-left" src="images/icon_html.png" alt=""/>
+                <h4>HTML5 At Its Best</h4>
+                <p>The state-of-the-art HTML5 powered flexible layout with lightspeed fast CSS3 effects.</p>
+            </div>
 
-	<!-- IE -->
-	<!--[if lt IE 9]>
-		<link rel="stylesheet" type="text/css" href="css/ie.css" />
-	<![endif]-->
-	<!--[if lt IE 10]>
-		<script type="text/javascript" src="js/PIE.js"></script>
-	<![endif]-->
+            <div class="column one-third">
+                <img class="icon-50 float-left" src="images/icon_responsive.png" alt=""/>
+                <h4>Responsive</h4>
+                <p>Fully responsive layout! Adapted for every modern mobile device on the market.</p>
+            </div>
 
-</head>
-<body class="home">
-	<div class="wrapper">
-		<div class="flexslider" id="home">
-			<div class="dots"></div>
-			<ul class="slides">
-				<li class="slide1">
-					<div class="container">
-						<div class="slide-content">
-							<h1 class="hero">Web Sentiments
-                                <span>Your Local Marketing Platform</span></h1>
-							<a class="button get-started" href="#">Tell me more</a>
-						</div> <!-- /.slide-content -->
-					</div> <!-- /.container -->
-				</li> <!-- /.slide1 -->
-                <li class="slide2">
-                    <div class="container">
-                        <div class="slide-content">
-                            <h1 class="hero">Web Sentiments
-                                <span>A cloud-based solution that simplifies Digital Marketing</span></h1>
-                            <a class="button get-started" href="#">Tell me more</a>
-                        </div> <!-- /.slide-content -->
-                    </div> <!-- /.container -->
-                </li> <!-- /.slide1 -->
-                <li class="slide3">
-                    <div class="container">
-                        <div class="slide-content">
-                            <h1 class="hero">Web Sentiments
-                                <span>A cloud-based solution that simplifies Digital Marketing</span></h1>
-                            <a class="button get-started" href="#">Tell me more</a>
-                        </div> <!-- /.slide-content -->
-                    </div> <!-- /.container -->
-                </li> <!-- /.slide1 -->
-			</ul>
-		</div> <!-- /#home.flexslider -->
+            <div class="column one-third last">
+                <img class="icon-50 float-left" src="images/icon_integration.png" alt=""/>
+                <h4>Analytics Ready</h4>
+                <p>Super easy integration of Google Analytics. Custom script allows to count in-page events.</p>
+            </div>
 
-		<header class="main">
-			<div class="container">
-				<a href="index.html#" class="logo">
-                    <h3>Web Sentiments</h3>
-                    <!-- <img src="images/logo.png" alt="Web Sentiments" /> -->
-                </a>
-				<nav class="mobile hidden-desktop pull-right">
-					<select class="mobile-nav">
-						<option value=".home">Home</option>
-						<option value=".features">Features</option>
-						<option value=".our-company">About Us</option>
-						<!-- <option value=".our-team">Our Team</option> -->
-						<!-- <option value=".our-work">Our Work</option>
-						<option value=".pricing">Pricing</option>
-						<option value=".blog">Blog</option> -->
-						<option value=".contact">Get in touch</option>
-					</select>
-				</nav> <!-- nav.mobile -->
-				<nav class="main nav-collapse visible-desktop">
-					<ul class="inline">
-						<li><a href=".home">Home</a></li>
-						<li><a href=".features">Features</a></li>
-						<li><a href=".our-company">About Us</a></li>
-						<!-- <li><a href=".our-team">Our Team</a></li> -->
-						<!-- <li><a href=".our-work">Our Work</a></li>
-						<li><a href=".pricing">Pricing</a></li>
-						<li><a href=".blog">Blog</a></li> -->
-						<li><a href=".contact">Get in touch</a></li>
-					</ul>
+            <div class="column one-third">
+                <img class="icon-50 float-left" src="images/icon_mail.png" alt=""/>
+                <h4>AJAX Powered</h4>
+                <p>Bulletproof contact form exploits the AJAX technology and does not require the page to reload.</p>
+            </div>
 
-				</nav> <!-- /nav.main -->
-				
-			</div> <!-- /.container -->
+            <div class="column one-third">
+                <img class="icon-50 float-left" src="images/icon_check.png" alt=""/>
+                <h4>W3C Compliant</h4>
+                <p>The template is built in correspondence with the standards established by W3C.</p>
+            </div>
 
-		</header> <!-- /header.main -->
+            <div class="column one-third last">
+                <img class="icon-50 float-left" src="images/icon_chat.png" alt=""/>
+                <h4>We Are Listening</h4>
+                <p>In case of any questions you can count on our assistance. If you are in trouble we're here to help!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="team" class="back-diagonals">
+    <div class="container">
+        <h2>The Team</h2>
 
-		<section class="features">
+        <div class="column-container">
+            <div class="column one-fourth align-center">
+                <img class="rounded" src="images/photo_william.jpg" alt="" />
+                <h5>William Gates</h5>
+                <p>Lead Software Engineer.</p>
+            </div>
 
-			<div class="container">
+            <div class="column one-fourth align-center">
+                <img class="rounded" src="images/photo_steven.jpg" alt="" />
+                <h5>Steven Ballmer</h5>
+                <p>Chief Executive Officer</p>
+            </div>
 
-				<div class="row-fluid features-wrapper">
-				
-					<div class="span4 center feature">
+            <div class="column one-fourth align-center">
+                <img class="rounded" src="images/photo_amy.jpg" alt="" />
+                <h5>Amy Hood</h5>
+                <p>Cheif Financial Officer</p>
+            </div>
 
-						<i class="fa fa-users"></i>
-						<h2>Engage</h2>
-						<p>Connect with your customers through
-                            Email, SMS, Web and Social Media. Have
-                            meaningful conversations and increase brand
-                            loyalty leading to greater footfalls.
-                            </p>
-						<a class="button small inline-nav" href=".contact">Learn more</a>
-						
-					</div> <!-- /.span4 center feature -->
-					
-					<div class="span4 center feature">
-					
-						<i class="fa fa-bar-chart-o"></i>
-						<h2>Monitor</h2>
-						<p>Monitor conversations on social and online
-                            channels and manage brand reputation.
-                            Provide consistent brand messaging across all channels.
-                            </p>
-						<a class="button small inline-nav" href=".contact">Learn more</a>
-					</div> <!-- /.span4 center feature -->
-					<div class="span4 center feature">
-						<i class="fa fa-thumbs-up"></i>
-						<h2>Optimize</h2>
-						<p>
-                        Gain deep insights into consumers' social
-                        behavior and engagement levels through
-                        an intuitive dashboard and custom reports.
-                        </p>
-						<a class="button small inline-nav" href=".contact">Learn more</a>
-					</div> <!-- /.span4 --> 
-				</div> <!-- /.row-fluid -->	
-			</div> <!-- /.container -->
-		</section> <!-- /.features -->
-		<section class="experts bordered transparent center">
-			<div class="container">
-				<h1 class="hero">Crafted by Experts</h1>
-				<p class="center sub-hero">
-                    Some of the best minds of the industry have developed this
-                    powerful and secure<br />
-                    cloud-based solution using responsive web design techniques to <br />
-                    cater to various devices and form factors.
+            <div class="column one-fourth align-center last">
+                <img class="rounded" src="images/photo_tony.jpg" alt="" />
+                <h5>Tony Bates</h5>
+                <p>Executive Vice President</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="testimonials">
+    <div class="container">
+        <h2>What People Say</h2>
+        <ul id="testimonials-container" class="slides">
+            <li class="current">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris accumsan vel enim in tristique. Vestibulum sed sodales nibh. Nunc laoreet dapibus justo egestas tempus. Ut a lacus sit amet nisi congue interdum. Curabitur nunc enim, tristique interdum aliquam nec, cursus quis nisi ...</blockquote>
+                <p class="author"><strong>Steven Jobs</strong> Co-Founder of Apple</p>
+            </li>
+            <li>
+                <blockquote>Nunc lacus nulla, mattis vitae posuere nec, pretium sollicitudin nisi. Praesent auctor ac nisl sit amet imperdiet. Fusce placerat, elit at ultrices bibendum, elit magna lacinia mauris, ac ultricies enim odio sit amet lectus. Nullam at venenatis turpis, eget interdum nulla ...</blockquote>
+                <p class="author"><strong>Jonattan Ivy</strong> Product Designer at Apple</p>
+            </li>
+            <li>
+                <blockquote>Sed sagittis vel dui vulputate consectetur. Duis sapien eros, pellentesque vitae nibh non, consequat dictum justo. Suspendisse sed justo nec purus egestas mollis quis dapibus elit. Nulla facilisi. In dignissim felis vitae faucibus sodales. Quisque id massa nec sapien feugiat varius ...</blockquote>
+                <p class="author"><strong>Tim Cook</strong> CEO at Apple</p>
+            </li>
+        </ul>
+        <nav id="testimonials-nav">
+            <ul class="slide-nav">
+                <li class="current"><a href="#">SJ</a></li>
+                <li><a href="#">JI</a></li>
+                <li><a href="#">TC</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+<section id="usage" class="back-crosses">
+    <div class="container">
+
+        <h2>Usage</h2>
+
+        <div class="column-container">
+        <h3>Columns</h3>
+        <div class="column one-fourth">
+            <h4>One Fourth</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum cursus hendrerit. Aliquam elementum velit dolor, non pellentesque turpis cursus non. Phasellus nec dignissim magna, non placerat tortor. Quisque tincidunt sem ac nulla commodo.
+            </p>
+        </div>
+        <div class="column three-fourths last">
+            <h4>Three Fourths</h4>
+            <p>Phasellus convallis, massa ac dignissim ultrices, ante lorem dictum erat, vitae pharetra tellus massa quis orci. Maecenas eleifend eget augue id dignissim. Donec eleifend iaculis rutrum. Donec scelerisque felis id neque condimentum, ut iaculis massa viverra. </p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit tortor elit, ut consequat nulla consectetur et. Proin sem mauris, mollis eget sagittis at, sodales et mauris. Nam sit amet sagittis neque. Nulla ultrices aliquet quam, vitae tempor velit pellentesque eget. Nulla porta lorem tellus, sed sodales mi vestibulum vel. Vestibulum venenatis et nisl eu vestibulum. Integer at justo eu libero rutrum congue vel eu erat.</p>
+        </div>
+    </div>
+
+        <div class="column-container">
+        <div class="column two-thirds">
+            <h4>Two Thirds</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum cursus hendrerit. Aliquam elementum velit dolor, non pellentesque turpis cursus non. Phasellus nec dignissim magna, non placerat tortor. Quisque tincidunt sem ac nulla commodo.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam suscipit tortor elit, ut consequat nulla consectetur et. Proin sem mauris, mollis eget sagittis at, sodales et mauris. Nam sit amet sagittis neque.</p>
+        </div>
+        <div class="column one-third last">
+            <h4>One Third</h4>
+            <p>Phasellus convallis, massa ac dignissim ultrices, ante lorem dictum erat, vitae pharetra tellus massa quis orci. Maecenas eleifend eget augue id dignissim. Donec eleifend iaculis rutrum. Donec scelerisque felis id neque condimentum, ut iaculis massa viverra. </p>
+        </div>
+    </div>
+
+        <div class="column-container">
+        <div class="column one-third">
+            <h2>H2 Header</h2>
+            <h3>H3 Header</h3>
+            <h4>H4 Header<br><br></h4>
+            <h5>H5 Header</h5>
+        </div>
+        <div class="column one-third">
+            <h3>UL.circles</h3>
+            <ul class="circles">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Consectetur adipiscing elit.</li>
+                <li>Sed interdum cursus hendrerit.</li>
+                <li>Aliquam elementum velit dolor</li>
+            </ul>
+        </div>
+        <div class="column one-third last">
+            <h3>Buttons</h3>
+            <p><a class="button blue" href="#">.button.blue</a></p>
+            <p><a class="button green" href="#">.button.green</a></p>
+            <p><a class="button light-grey" href="#">.button.light-grey</a></p>
+            <p><a class="button grey" href="#">.button.grey</a></p>
+        </div>
+    </div>
+
+    </div>
+</section>
+<section id="subscribe">
+    <div class="container align-center">
+        <h2>Subscribe now!</h2>
+        <h5>Leave your email below and we'll let you know:</h5>
+        <form id="subscribe-form">
+            <p><input type="text" placeholder="Type your email here ..." /></p>
+            <p class="submit"><button type="submit" class="button light-grey">Subscribe now</button></p>
+        </form>
+            <p>Spam proof newsletter guaranteed!</p>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="column-container">
+            <div class="column one-half">
+                <h3>About us:</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum cursus hendrerit. Aliquam elementum velit dolor, non pellentesque turpis cursus non. Phasellus nec dignissim magna, non placerat tortor. Quisque tincidunt sem ac nulla commodo.
                 </p>
-				<a class="button inline-nav" href=".contact">Find out more</a>
-			</div> <!-- /.container -->
+            </div>
+            <div class="column one-half last">
+                <h3>Address:</h3>
+                <p>08172, Passatge de Sant Antoni 8, p.1, p.2, Sant Cugat del Valles, Barcelona, Spain.</p>
+                <p>+34 123 456 789</p>
+                <p><a href="#">http://1giantleap.ru</a></p>
+            </div>
+        </div>
+        <div class="column-container">
+            <div class="column one-half">
+                <h3>Frequent Questions:</h3>
+                <ul class="circles">
+                    <li><a href="#">Morbi consequat diam et feugiat lobortis?</a></li>
+                    <li><a href="#">Nulla sollicitudin fringilla tortor, nec laoreet ipsum rutrum id?</a></li>
+                    <li><a href="#">Vivamus auctor dui augue, sit amet facilisis?</a></li>
+                    <li><a href="#">Suspendisse sed pellentesque justo?</a></li>
+                    <li><a href="#">Quisque faucibus lobortis velit ac tincidunt?</a></li>
+                    <li><a href="#">Praesent libero augue, consequat sit amet viverra id?</a></li>
+                    <li><a href="#">Phasellus sit amet commodo lectus?</a></li>
+                </ul>
+            </div>
+            <div class="column one-half last">
+                <h3>More Questions?</h3>
+                <form id="contact-form">
 
-		</section> <!-- /.experts -->
+                    <p id="contact-form-success" class="form-success-message">
+                        <strong>Your message was sent!</strong><br>
+                        We will respond to your request as soon as possible. Thank you for your interest!
+                    </p>
 
-		<section class="our-company">
-
-			<div class="container">
-
-				<h1 class="hero">About Us</h1>
-
-				<div class="row-fluid">
-					<div class="span6 offset3">
-						<h5 class="primary">Our Company</h5>
-						<p>
-                        We want to be revered as a company that transforms
-                        our clients' businesses, brands and reputations.
-                        </p>
-                        <p>In our previous lives, we built mobile apps, web apps,
-                        made private equity investments, and executed digital
-                        campaigns for some of the largest brands in the world.
-                        We are a happy mix of engineers, designers and digital
-                        marketers spending our time to help build customer
-                        relationships through cloud-based technology.
-                        </p>
-
-						<div class="row-fluid" style="visibility:hidden">
-
-							<div class="span6">
-
-								<h6>Secure</h6>
-								<ul class="fancy-list" data-icon="icon-ok">
-									<li>List item</li>
-									<li>Second list item</li>
-									<li>Third item in the list</li>
-								</ul>
-
-							</div> <!-- /.span6 -->
-
-							<div class="span6">
-
-								<h6>Reliable</h6>
-								<ul class="fancy-list" data-icon="icon-thumbs-up">
-									<li>List item</li>
-									<li>Second list item</li>
-									<li>Third item in the list</li>
-								</ul>
-
-							</div> <!-- /.span6 -->
-
-						</div> <!-- /.row-fluid -->	
-						
-					</div> <!-- /.span4 center -->
-					
-				</div> <!-- /.row-fluid -->	
-				
-			</div> <!-- /.container -->
-
-		</section> <!-- /.features -->
-
-
-		<footer class="main contact">
-
-			<div class="container">
-			
-				<h1 class="hero">Get in touch.</h1>
-
-				<div class="row-fluid">
-
-					<div class="span3 offset1">
-					
-						<h6><i class="icon-envelope"></i>Email</h6>
-
-						<p>team@websentiments.com<br /></p>
-
-						<hr />
-
-						<h6><i class="icon-phone"></i>Phone</h6>
-
-						<p>+91 9591448558<br/></p>
-						
-					</div> <!-- /.span3 --> 
-
-					<div class="span6 offset1">
-						<h2>Drop us an email or give us a call for a free demo.</h2>
-					</div> <!-- /.span6 --> 
-					
-				</div> <!-- /.row-fluid -->
-				
-			</div> <!-- /.container -->
-
-			<div class="copyright clearfix">
-				
-				<div class="container">
-				
-					<div class="pull-left">
-						
-						<p>Copyright &copy; 2014 Web Sentiments</p>
-						
-					</div> <!-- /.pull-left -->
-
-					<div class="pull-right">
-						
-						<nav class="footer">
-
-							<ul class="inline">
-								<li><a href=".home" class="inline-nav">Home</a></li>
-                                <li><a href=".features" class="inline-nav">Features</a></li>
-								<li><a href=".our-company" class="inline-nav">About</a></li>
-								<li><a href=".contact" class="inline-nav">Contact</a></li>
-							</ul>
-
-						</nav> <!-- /nav.footer -->
-						
-					</div> <!-- /.pull-right -->
-					
-				</div> <!-- /.container -->
-					
-			</div> <!-- /.copyright -->
-
-		</footer> <!-- /footer.main -->
-		
-	</div> <!-- /.wrapper -->	
-
-	<script type="text/javascript" src="js/bootstrap.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
-	<script type="text/javascript" src="js/jquery.debouncedresize.js"></script>
-	<script type="text/javascript" src="js/jquery.actual.js"></script>
-	<!-- <script type="text/javascript" src="js/retina.js"></script> -->
-	<!-- <script type="text/javascript" src="js/jquery.isotope.min.js"></script> -->
-	<script type="text/javascript" src="js/custom.js"></script>
-	<!-- <script type="text/javascript" src="js/portfolio.js"></script> -->
-	<!-- <script type="text/javascript" src="js/blog.js"></script> -->
-	<!-- <script type="text/javascript" src="js/form.js"></script> -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-49343215-1', 'websentiments.com');
-        ga('send', 'pageview');
-    </script>
-</body>
-</html>
+                    <p><input id="contact-name" class="required" name="contact-name" type="text" placeholder="Name" /></p>
+                    <p><input id="contact-email" class="required" name="contact-email" type="text" placeholder="Email" /></p>
+                    <p><textarea id="contact-mesage" class="required" name="contact-message" placeholder="Message"></textarea></p>
+                    <p class="submit"><button class="form-submit button grey" type="submit">Submit</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
