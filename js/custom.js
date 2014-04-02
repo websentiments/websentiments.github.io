@@ -280,11 +280,13 @@ function buildNavigation ( nav ) {
 	var items = nav.find("li a:not([class='external'])");
 
 	items.on({
-		click: function(){
+		click: function(e){
 
 			if ( !$(this).parent().hasClass("current")  ) {
-
-				nav.find("li").removeClass("current");
+                var path = this.pathname;
+				if( path != window.location.pathname )
+                    return;
+                nav.find("li").removeClass("current");
 				$(this).parent().addClass("current");
 
 				var ind = $(this).parent().index(),
@@ -302,7 +304,7 @@ function buildNavigation ( nav ) {
 
 			}
 
-			return false;
+			e.preventDefault();
 
 		}
 	});

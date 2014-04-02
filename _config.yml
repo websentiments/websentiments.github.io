@@ -1,7 +1,6 @@
+#base_path: /
 base_path: /websensepub/
 permalink: /blog/:title.html
-#base_path: /
-#permalink: /blog/:title.html
 pygments: true
 
 prose:
@@ -18,6 +17,7 @@ prose:
           element: "text"
           label: "Title of the post"
           placeholder: "<post title>"
+          value: ""
       - name: "author"
         field:
           element: "select"
