@@ -1113,6 +1113,9 @@ a#icon-in {
 }
 
 
+.big-icon { font-size: 52px; margin-right: 10px; margin-top: 0; }
+
+
 #blog #main-header,#post #main-header { background: #fff; color: #999;}
 #blog #main-header #header-nav a, #post #main-header #header-nav a { color: #999;}
 
@@ -1219,5 +1222,5 @@ blockquote {
     margin: 0
 }
 
-
+.icon-link .fa { margin-right: 5px; }
 
