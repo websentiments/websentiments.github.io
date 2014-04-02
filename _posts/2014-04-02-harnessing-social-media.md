@@ -4,6 +4,7 @@ published: true
 author: Ajeesh
 summary: null
 splash: media/social4.jpg
+title: Harnessing the power of social media
 ---
 
 Social media is the interaction among people in which they create, share or exchange information and ideas in virtual communities and networks.Andreas Kaplan and Michael Haenlein define social media as "a group of Internet-based applications that build on the ideological and technological foundations of Web 2.0, and that allow the creation and exchange of user-generated content." Furthermore, social media depend on mobile and web-based technologies to create highly interactive platforms through which individuals and communities share, co-create, discuss, and modify user-generated content. They introduce substantial and pervasive changes to communication between organizations, communities, and individuals.
