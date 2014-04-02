@@ -34,5 +34,9 @@ prose:
           label: "Splash image for the post"
           type: text
           placeholder: "media/something.jpg"
-
+      - name: "forreview"
+        field:
+          element: "checkbox"
+          label: "Draft, don't show on site"
+          value: false
 
