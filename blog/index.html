@@ -22,29 +22,46 @@ templatename: blog
 </header>
 <section id="article-list">
     <div class="container">
-        {% for num in (1...10) %}
+        {% for post in site.posts limit: 10  %}
         <article>
             <div class="heading">
-                <a href="#" class="">
-                    <h2>Harnessing the power of social media</h2>
+                <a href="{{ post.url }}" class="">
+                    <h2>{{ post.title }}</h2>
                 </a>
                 <div class="post-details">
-                    <span class="author">Vimal</span>
+                    {% if post.author %}
+                    <span class="author">{{ post.author }}</span>
                     <span class="bullet">∙</span>
-                    <span class="date">08 April 2013</span>
+                    {% endif %}
+                    <span class="date">{{ post.date | date_to_long_string }}</span>
                 </div>
             </div>
             <div class="hero">
-                <a href="#">
-                    <img src="http://lorempixel.com/960/400/nature/" />
+                <a href="{{ post.url }}">
+                    {% if post.splash %}
+                        {% if post.splash contains '://' %}
+                        <img src="{{post.splash}}" />
+                        {% else %}
+                        <img src="{{site.base_path}}{{post.splash}}" />
+                        {% endif %}
+                    {% endif %}
                 </a>
             </div>
+            {%if post.summary %}
             <div class="summary">
-                <p>Lorem ipsum dolor <a href="#">sit amet, consectetur</a> adipiscing elit. Nullam laoreet semper mauris. Proin pulvinar eu libero in interdum. Nunc velit libero, ultrices non porttitor vitae, tristique nec erat. Proin ut purus aliquam, faucibus neque sed, auctor massa. Fusce ac lacus tellus. Suspendisse sit amet urna odio. Nam quis nisi lobortis purus dignissim aliquam vel non ipsum. Ut at dolor eu purus malesuada tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur quis urna vitae sapien porta cursus a id orci. Sed ut nisl vitae leo ultrices pulvinar ac vitae leo. Proin varius tortor id lacus tincidunt fringilla.</p>
-                <p>Mauris at commodo nulla. Praesent et massa porttitor, vehicula orci quis, vulputate odio. In hac habitasse platea dictumst. Aliquam erat volutpat. In nec mi eros. Phasellus vitae lorem nibh. Aenean consequat lorem aliquet, tempor metus et, aliquam dolor. Donec sit amet suscipit turpis, eget pellentesque erat. Praesent augue quam, facilisis eget imperdiet id, commodo ac justo. Mauris id augue at felis varius dictum ac vitae tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla facilisi. Nunc et mauris lacinia, consectetur purus vitae, molestie neque.</p>
+                {{ post.summary | markdownify }}
             </div>
+            {% else %}
+                {% if post.content contains '<!--more-->' %}
+                  {{ post.content | split:'<!--more-->' | first }}
+                {% else %}
+                  <p>
+                  {{ post.content | strip_html | truncatewords:50 }}
+                  </p>
+                {% endif %}
+            {% endif %}
             <div class="post-links">
-                <a class="continue-reading zoom" href="#">Continue reading</a>
+                <a class="continue-reading zoom" href="{{ post.url }}">Continue reading</a>
             </div>
         </article>
         {% endfor %}

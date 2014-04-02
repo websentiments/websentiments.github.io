@@ -1138,7 +1138,7 @@ a#icon-in {
 #article-list .heading, #article-list .summary, #article-list .post-links {
     margin: 21px 90px;
 }
-#article-list p { text-align: left; font-size: 1.2rem; }
+#article-list p { text-align: left; font-size: 1.2rem; margin: 2rem 0;}
 .continue-reading {
 	border-radius: 900px;
 	border: 1px solid #999;
@@ -1168,6 +1168,7 @@ a#icon-in {
 	margin-left:20%
 }
 
-#article-list .hero img { width:100%; }
+#article-list .hero { max-height: 600px; overflow: hidden;}
+#article-list .hero img { width:100%;}
 
 
