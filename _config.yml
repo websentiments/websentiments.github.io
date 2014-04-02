@@ -1,5 +1,5 @@
 base_path: /websensepub/
-permalink: /websensepub/blog/:title.html
+permalink: /blog/:title.html
 #base_path: /
 #permalink: /blog/:title.html
 pygments: true
