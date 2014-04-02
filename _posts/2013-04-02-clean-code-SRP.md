@@ -6,7 +6,7 @@ forreview: false
 filename: "2013-04-02-clean-code-SRP.md"
 author: Vimal
 summary: "I have been writing code for more than a decade now. When I take a look at code that I had written a few years back, I cringe in shame and wonder how I got away with it. In my formative years, I was more focused on solving a technical challenge than caring about how I structured my code to make it happen. The one thing that has helped me focus more on writing more readable code  was the realization that code is written only once, but read **many** times."
-splash: contents/social1.jpg
+splash: media/social1.jpg
 ---
 
 I have been writing code for more than a decade now. When I take a look at code that I had written a few years back, I cringe in shame and wonder how I got away with it. In my formative years, I was more focused on solving a technical challenge than caring about how I structured my code to make it happen. The one thing that has helped me focus more on writing more readable code  was the realization that code is written only once, but read **many** times.
