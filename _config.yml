@@ -34,7 +34,6 @@ prose:
         field:
           element: "textarea"
           label: "Preview Text"
-          help: "Preview text visible in the article listing page"
       - name: "splash"
         field:
           element: "text"

@@ -47,10 +47,9 @@ templatename: blog
                     {% endif %}
                 </a>
             </div>
-            {%if post.summary %}
             <div class="summary">
+            {%if post.summary %}
                 {{ post.summary | markdownify }}
-            </div>
             {% else %}
                 {% if post.content contains '<!--more-->' %}
                   {{ post.content | split:'<!--more-->' | first }}
@@ -60,6 +59,7 @@ templatename: blog
                   </p>
                 {% endif %}
             {% endif %}
+            </div>
             <div class="post-links">
                 <a class="continue-reading zoom" href="{{ post.url }}">Continue reading</a>
             </div>
