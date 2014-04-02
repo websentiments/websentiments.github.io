@@ -17,7 +17,7 @@ templatename: blog
         {% for post in site.posts limit: 10  %}
         <article>
             <div class="heading">
-                <a href="{{ post.url }}" class="">
+                <a href="{{site.base_path}}{{ post.url }}" class="">
                     <h2>{{ post.title }}</h2>
                 </a>
                 <div class="post-details">
@@ -29,7 +29,7 @@ templatename: blog
                 </div>
             </div>
             <div class="hero">
-                <a href="{{ post.url }}">
+                <a href="{{site.base_path}}{{ post.url }}">
                     {% if post.splash %}
                         {% if post.splash contains '://' %}
                         <img src="{{post.splash}}" />
