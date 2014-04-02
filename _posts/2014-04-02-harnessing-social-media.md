@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 author: Ajeesh
 summary: null
 splash: media/social4.jpg
@@ -11,4 +11,3 @@ Social media is the interaction among people in which they create, share or exch
 Social media differ from traditional or industrial media in many ways, including quality, reach, frequency, usability, immediacy, and permanence.There are many effects that stem from internet usage. According to Nielsen, internet users continue to spend more time with social media sites than any other type of site. At the same time, the total time spent on social media in the U.S. across PC and mobile devices increased by 37 percent to 121 billion minutes in July 2012 compared to 88 billion minutes in July 2011.For content contributors, the benefits of participating in social media have gone beyond simply social sharing to building reputation and bringing in career opportunities and monetary income, as discussed in Tang, Gu, and Whinston (2012).
 
 Geocities, created in 1994, was one of the first social media sites. The concept was for users to create their own websites, characterized by one of six "cities" that were known for certain characteristics.
-
