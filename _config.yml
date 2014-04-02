@@ -1,6 +1,6 @@
 #base_path: /
 base_path: /websensepub/
-permalink: blog/:title.html
+permalink: /websensepub/blog/:title.html
 pygments: true
 
 prose:
