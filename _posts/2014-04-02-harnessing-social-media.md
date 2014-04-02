@@ -2,8 +2,8 @@
 layout: post
 published: true
 author: Ajeesh
-summary: Preview text visible in the article listing page
-splash: media/social4.jpg
+summary: null
+splash: "https://farm9.staticflickr.com/8246/8468788107_255777d512_b.jpg"
 title: Harnessing the power of social media
 ---
 
