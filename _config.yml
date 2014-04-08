@@ -7,6 +7,7 @@ markdown: kramdown
 prose:
   siteurl: 'http://madaboutcode.com/websensepub/'
   media: 'media'
+  rooturl: '_posts'
   metadata:
     _posts:
       - name: "layout"
