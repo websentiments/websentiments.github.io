@@ -1,4 +1,3 @@
-#base_path: /
 base_path: /
 permalink: /blog/:title.html
 pygments: true
