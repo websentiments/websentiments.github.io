@@ -2,6 +2,7 @@
 base_path: /websensepub/
 permalink: /blog/:title.html
 pygments: true
+markdown: kramdown
 
 prose:
   siteurl: 'http://madaboutcode.com/websensepub/'
