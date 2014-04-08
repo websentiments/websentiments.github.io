@@ -1,5 +1,5 @@
 #base_path: /
-base_path: /websensepub/
+base_path: /
 permalink: /blog/:title.html
 pygments: true
 markdown: kramdown
